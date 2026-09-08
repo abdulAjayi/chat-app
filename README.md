@@ -5,7 +5,7 @@ This repository contains a React/Vite frontend and an Express/Socket.io backend.
 ## Run locally
 
 1. Install dependencies: `npm install`
-2. Copy `backend/.env.example` to `backend/.env` and `frontend/.env.example` to `frontend/.env` if the defaults do not suit your setup.
+2. Update the existing `backend/.env` and `frontend/.env` files if the defaults do not suit your setup.
 3. In one terminal, run `npm run backend`.
 4. In a second terminal, run `npm run frontend`.
 

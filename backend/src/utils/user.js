@@ -2,7 +2,8 @@ const users = [];
 
 function addUser({ id, username, room }) {
   // Normalize before validation so a name containing only spaces cannot join.
-  const user = typeof username === "string" ? username.trim().toLowerCase() : "";
+  const user =
+    typeof username === "string" ? username.trim().toLowerCase() : "";
   const group = typeof room === "string" ? room.trim().toLowerCase() : "";
 
   if (!user || !group) {
