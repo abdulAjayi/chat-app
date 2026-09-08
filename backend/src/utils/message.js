@@ -13,7 +13,5 @@ function generateLocationMessage(username, location) {
     createdAt: new Date().getTime(),
   };
 }
-module.exports = {
-  generateMessage,
-  generateLocationMessage,
-};
+
+module.exports = { generateMessage, generateLocationMessage };
