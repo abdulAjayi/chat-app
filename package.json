@@ -1,22 +1,20 @@
 {
-  "name": "chat-app",
+  "name": "realtime-chat-monorepo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "A room-scoped real-time chat application",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "backend": "npm run dev --workspace=backend",
+    "frontend": "npm run dev --workspace=frontend",
+    "start": "npm run start --workspace=backend",
+    "build": "npm run build --workspace=frontend"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "devDependencies": {
-    "nodemon": "^3.1.14"
-  },
-  "dependencies": {
-    "bad-words": "^3.0.4",
-    "express": "^5.2.1",
-    "socket.io": "^4.8.3"
-  }
+  "devDependencies": {}
 }
